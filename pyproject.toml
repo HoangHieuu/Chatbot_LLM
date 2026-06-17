@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatbot-llm-vietnamese"
+version = "0.1.0"
+description = "Vietnamese chatbot LLM fine-tuning and inference project."
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=0.34.0",
+    "gradio>=4.44.0",
+    "peft>=0.12.0",
+    "python-dotenv>=1.0.1",
+    "torch>=2.4.0",
+    "transformers>=4.44.0",
+]
+
+[project.optional-dependencies]
+train = [
+    "datasets==3.5.1",
+    "trl==0.9.6",
+    "unsloth==2025.4.7",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

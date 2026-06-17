@@ -1,0 +1,20 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Training artifacts
+checkpoint/
+checkpoints/
+outputs/
+models/
+adapters/
+wandb/
+runs/
+
+# Local OS/editor files
+.DS_Store
+.idea/
+.vscode/
